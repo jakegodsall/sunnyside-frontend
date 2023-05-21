@@ -1,3 +1,17 @@
+@use '../abstracts' as a;
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
 body {
     font-size: 1.8rem;
+    font-family: a.$font-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: a.$font-secondary;
 }
