@@ -3,7 +3,11 @@
     "version": "1.0.0",
     "description": "Solution to the Sunnyside project from Frontend Mentor",
     "main": "index.js",
-    "scripts": {},
+    "scripts": {
+        "compile:sass": "sass --watch ./scss/main.scss ./css/main.css",
+        "dev": "live-server",
+        "start": "npm-run-all --parallel compile:sass dev"
+    },
     "author": "Jake Godsall",
     "license": "ISC",
     "devDependencies": {
